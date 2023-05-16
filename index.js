@@ -43,6 +43,35 @@ const questions = [
         type: 'input',
         message: 'Is there any questions that needs ot be added?',
         name: 'Questions'
+    },
+    {
+        type: 'list',
+        message: 'Which license are you using?',
+        name: 'license',
+        choices: [
+            {
+                name: 'Apache',
+                value: '1'
+            },
+            {
+                name: 'GNU General Public License',
+                value: '2'
+            },
+            {
+                name: 'MIT',
+                value: '3'
+            }
+        ]
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'GitHub'
+    },
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email'
     }
 ];
 
