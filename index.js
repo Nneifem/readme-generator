@@ -8,42 +8,42 @@ const questions = [
     {
         type: 'input',
         message:'What is the name of your project?',
-        name: 'Project Title'
+        name: 'title'
     },
     {
         type: 'input',
         message: 'What is the description of your project?',
-        name: 'Description'
+        name: 'description'
     },
     {
         type: 'input',
         message: 'Does your README need a table of contents?',
-        name: 'Table of Contents'
+        name: 'toc'
     },
     {
         type: 'input',
-        message: 'What is the installation instructions process?',
-        name: 'Installation Instructions'
+        message: 'What is the installation process?',
+        name: 'installation'
     },
     {
         type: 'input',
         message: 'What is the usage information?',
-        name: 'Usage Information'
+        name: 'usage'
     },
     {
         type: 'input',
-        message: 'What is the contribution guidelines?',
-        name: 'Contribution Guidelines'
+        message: 'Was their anyone who contributed in the making of the project?',
+        name: 'contribution'
     },
     {
         type: 'input',
         message: 'What is the test intructions for this project?',
-        name: 'Test Instruction'
+        name: 'test'
     },
     {
         type: 'input',
         message: 'Is there any questions that needs to be added?',
-        name: 'Questions'
+        name: 'question'
     },
     {
         type: 'list',
@@ -67,7 +67,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is your GitHub username?',
-        name: 'GitHub'
+        name: 'github'
     },
     {
         type: 'input',
@@ -79,7 +79,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.log(err) : console.log('readme successfully saved')
+        err ? console.log(err) : console.log('README successfully saved')
     );
 }
 
@@ -90,7 +90,7 @@ function init() {
     .then((answers) => {
         const readMePageContent = generateMarkdown(answers)
 
-        writeToFile('readme.md', readMePageContent);
+        writeToFile('README.md', readMePageContent);
     });
 }
 
