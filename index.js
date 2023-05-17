@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// packages needed for the program to work
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// array of questions for the readme
 const questions = [
     {
         type: 'input',
@@ -15,11 +15,11 @@ const questions = [
         message: 'What is the description of your project?',
         name: 'description'
     },
-    {
-        type: 'input',
-        message: 'Does your README need a table of contents?',
-        name: 'toc'
-    },
+    // {
+    //     type: 'input',
+    //     message: 'Does your README need a table of contents?',
+    //     name: 'toc'
+    // },
     {
         type: 'input',
         message: 'What is the installation process?',
@@ -40,11 +40,11 @@ const questions = [
         message: 'What is the test intructions for this project?',
         name: 'test'
     },
-    {
-        type: 'input',
-        message: 'Is there any questions that needs to be added?',
-        name: 'question'
-    },
+    // {
+    //     type: 'input',
+    //     message: 'Is there any questions that needs to be added?',
+    //     name: 'question'
+    // },
     {
         type: 'list',
         message: 'Which license are you using?',
@@ -52,15 +52,15 @@ const questions = [
         choices: [
             {
                 name: 'Apache',
-                value: '1'
+                value: 'Apache'
             },
             {
-                name: 'GNU General Public License',
-                value: '2'
+                name: 'ISC',
+                value: 'ISC'
             },
             {
                 name: 'MIT',
-                value: '3'
+                value: 'MIT'
             }
         ]
     },
