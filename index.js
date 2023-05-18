@@ -15,11 +15,6 @@ const questions = [
         message: 'What is the description of your project?',
         name: 'description'
     },
-    // {
-    //     type: 'input',
-    //     message: 'Does your README need a table of contents?',
-    //     name: 'toc'
-    // },
     {
         type: 'input',
         message: 'What is the installation process?',
@@ -40,11 +35,6 @@ const questions = [
         message: 'What is the test intructions for this project?',
         name: 'test'
     },
-    // {
-    //     type: 'input',
-    //     message: 'Is there any questions that needs to be added?',
-    //     name: 'question'
-    // },
     {
         type: 'list',
         message: 'Which license are you using?',
