@@ -51,6 +51,10 @@ const questions = [
             {
                 name: 'MIT',
                 value: 'MIT'
+            },
+            {
+                name: 'none',
+                value: 'none'
             }
         ]
     },
@@ -66,14 +70,14 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// log the information into the README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('README successfully saved')
     );
 }
 
-// TODO: Create a function to initialize app
+// getting inquirer to work and be displayed in the file
 function init() {
     inquirer
     .prompt(questions)
@@ -84,5 +88,5 @@ function init() {
     });
 }
 
-// Function call to initialize app
+// getting the function to run
 init();
