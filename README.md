@@ -13,7 +13,7 @@ This project was built to generate a README file that is properly formatted when
 In order to get this project to work, you will need to install Node.js v16 and inquirer version 8.2.4. Then when you open VS code, open the integrated terminal, type in npm i inquirer@8.2.4 to install inquirer and npm init -y and npm i for the packages needed as well.
 
 ## Usage
-https://drive.google.com/file/d/1GS7dak_iNUesrj1X4lm-hZrAjIxc0i2E/view?usp=share_link
+Link to demo the README generator: https://drive.google.com/file/d/1GS7dak_iNUesrj1X4lm-hZrAjIxc0i2E/view?usp=share_link
 
 When everything has been installed, you can open the integrated terminal and answer the following questions prompted to you in order to fill out your README.
 
